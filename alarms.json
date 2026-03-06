@@ -1,0 +1,29 @@
+[
+  {
+    "deviceId": "viraj",
+    "alarm": [
+      "EB FAILED"
+    ],
+    "time": "2026-03-06T11:57:58.062Z"
+  },
+  {
+    "deviceId": "viraj",
+    "alarm": [
+      "EB FAILED"
+    ],
+    "time": "2026-03-06T12:00:36.428Z"
+  },
+  {
+    "deviceId": "viraj",
+    "alarm": [
+      "EB FAILED",
+      "ESP OFFLINE"
+    ],
+    "time": "2026-03-06T12:00:55.767Z"
+  },
+  {
+    "deviceId": "viraj",
+    "alarm": [],
+    "time": "2026-03-06T12:03:06.099Z"
+  }
+]
