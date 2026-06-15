@@ -174,7 +174,7 @@ function saveAlarm(deviceId, alarm){
 setInterval(() => {
   const now = Date.now();
   for (const deviceId in lastSeen) {
-    const offline = now - lastSeen[deviceId] > 10000;
+    const offline = now - lastSeen[deviceId] > 30000;
     if (!deviceStatus[deviceId]) continue;
     let alarms = deviceStatus[deviceId].alarms;
     if (!Array.isArray(alarms)) {
