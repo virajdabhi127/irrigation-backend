@@ -188,8 +188,7 @@ setInterval(() => {
         saveAlarm(deviceId, "ESP_COMMUNICATION_FAILED");
       }
     } else {
-       if(alarms.includes("ESP_COMMUNICATION_FAILED")){
-        db.run(
+       db.run(
           `UPDATE alarms
           SET cleared_at = CURRENT_TIMESTAMP
           WHERE device_id = ?
@@ -200,7 +199,6 @@ setInterval(() => {
         alarms = alarms.filter(
           a => a !== "ESP_COMMUNICATION_FAILED"
         );
-      }
     }
     deviceStatus[deviceId].alarms =
       alarms.length ? alarms : "NONE";
